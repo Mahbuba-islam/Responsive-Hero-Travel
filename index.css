@@ -16,9 +16,9 @@
     color: white;
     border: none;
    border-radius: 10px;
-    width: 110px;
-    padding: 10px 7px;
-    text-align: center;
+   width: 120px;
+   padding: 10px 5px;
+  text-align: center;
     font-weight: 700;
 }
 
@@ -135,8 +135,10 @@ form>.input-container{
 form>.input-container>input,  .input-container>select{
     border: none;
     border-radius: 10px;
-    width: 110px;
+    width: 120px;
     padding: 10px 5px;
+    
+    /* padding: 10px 10px; */
 }
 
 
@@ -197,6 +199,88 @@ form>.input-container>input,  .input-container>select{
    
 }
 
+/* destination styles */
+.Destination-container{
+    margin-top: 100px;
+   
+}
+
+
+
+.Destination-container>.destination-text{
+    text-align: center;
+    margin: 15px auto;
+}
+
+.Destination-container>.destination-text>p{
+    margin: 20px auto;
+    width: 50%;
+  
+}
+
+
+.destination-images{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 12px;
+   
+   
+  
+}
+
+.destination{
+    position: relative;
+   
+
+}
+
+.destination>h2{
+    position: absolute;
+    top: 38%;
+    left: 38%;
+    display: flex;
+   justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.destination>img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.maldives{
+   grid-column: 1/7;
+  
+}
+.Indonesia{
+    grid-column: 7/13;
+}
+.srilanka{
+    grid-column: 1/4;
+   
+}
+.northAmerica{
+    grid-column: 4/11;
+ 
+}
+.Kasmir{
+    grid-column: 11/13;
+   
+}
+.Bangladesh{
+    grid-column: 1/5;
+  
+}
+.Bandarban{
+    grid-column: 5/13;
+   
+} 
+
+
+
 
 /* mobile media query */
  
@@ -226,10 +310,9 @@ form>.input-container>input,  .input-container>select{
      
     }
     form>.input-container>input, .search-btn>button,  .input-container>select{
-        width: 200px;
+        width: 150px;
         margin: 0px auto;
-        padding: 0%;
-        text-align: center;
+       text-align: center;
     }
 
    
@@ -237,11 +320,11 @@ form>.input-container>input,  .input-container>select{
        font-size: 15px;
        padding: 5px 10px;
        margin: 20px auto;
-       width: 300px;
+       width: 250px;
     }
 
     .banner-container>.banner>img{
-        height: 530px;
+        height: 600px;
         object-fit: cover;
     }
     .shadow-backround{
@@ -272,8 +355,35 @@ form>.input-container>input,  .input-container>select{
         width: 100%;
       
     }
+
+    /* destination responsive */
+    .Destination-container{
+        margin-top: 30px;
+       
+    }
+
+   .Destination-container>.destination-text>p{
+        margin: 10px auto;
+        width: 60%;
+
+    }
     
-  
+    .destination-images{
+        grid-template-rows: repeat(7,1fr);
+    }
+    
+    .destination{
+        grid-column: 1/13;
+    }
+    .destination>img{
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+   
+    
+   
 }
 
 /* tablet media query */
@@ -302,7 +412,7 @@ form>.input-container>input,  .input-container>select{
     form>.input-container>input, .search-btn>button,  .input-container>select{
         width: 180px;
         margin: 0px auto;
-        padding: 0%;
+        
         text-align: center;
     }
 
@@ -345,7 +455,49 @@ form>.input-container>input,  .input-container>select{
         width: 100%;
       
     }
-    
-    
+
+    /* destination section responsive */
+
+    .Destination-container{
+        margin-top: 30px;
        
     }
+
+   
+    .destination-images{
+      grid-template-rows: repeat(4,1fr); 
+    }
+
+    .maldives{
+        grid-column: 1/13;
+       
+     }
+
+     .Indonesia{
+        grid-column: 1/7;
+    }
+    .srilanka{
+        grid-column: 7/13;
+       
+    }
+    .northAmerica{
+        grid-column: 1/7;
+     
+    }
+    .Kasmir{
+        grid-column: 7/13;
+       
+    }
+    .Bangladesh{
+        grid-column: 1/7;
+      
+    }
+    .Bandarban{
+        grid-column: 7/13;
+       
+    } 
+    
+  
+   
+    
+}
