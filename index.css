@@ -414,7 +414,7 @@ form>.input-container>input,  .input-container>select{
        border-radius: 0%;
     }
 
-    /* tours section responsive */
+    /* popular tours section responsive */
     .tours-container{
        flex-direction: column;
     
@@ -485,7 +485,7 @@ form>.input-container>input,  .input-container>select{
    
 }
 
-/* tours section responsive */
+/* package tours section responsive */
 
 
 .packages-card-container>img{
@@ -501,27 +501,23 @@ form>.input-container>input,  .input-container>select{
 
 
 .package-card-info{
-    display: flex;
-    flex-wrap: wrap;
+   flex-wrap: wrap;
    gap: 0px 50px;
    margin-bottom: 7px;
 }
 
-.packages-btn{
-    text-align: center;
-    
-}
-.packages-btn>button{
-    width: 180px;
-}
-
-    
    
 }
 
 /* tablet media query */
 
 @media screen and (min-width:576px) and (max-width:800px) {
+    
+   
+    .container>.section-text>.section-des{
+        width: 70%; 
+        
+    }
     nav{
         flex-direction: column;
         gap: 10px;
@@ -567,7 +563,7 @@ form>.input-container>input,  .input-container>select{
        border-radius: 0%;
     }
 
-    /* tours section responsive */
+    /*popular tours section responsive */
     .tours-container{
         flex-direction: column;
       }
@@ -630,7 +626,48 @@ form>.input-container>input,  .input-container>select{
        
     } 
     
+
+     /* why choose us section responsive tablet*/
+
+     .service-container{
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        grid-row: repeat(3,1fr);
+       gap: 30px;
+       
+    }
+  .service{
+   grid-column: 1/13;
+   padding: 30px 40px;
+   border-radius: 20px;
   
+  
+}
+  .service>p{
+    width: 100%;
+   
+}
+  
+    /* package tours section tablet responsive */
+
+    .packages-card-container>img{
+        height: 500px;
+        object-fit: cover;
+      
+     }
+     .package-card{
+         width: 60%;
+        top: 15%;
+        left: 10%;
+     }
+     
+     
+     .package-card-info{
+        flex-wrap: wrap;
+        gap: 0px 50px;
+        margin-bottom: 7px;
+     }
+     
    
     
 }
